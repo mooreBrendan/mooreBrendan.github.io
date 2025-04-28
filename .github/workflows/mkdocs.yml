@@ -40,7 +40,7 @@ jobs:
         id: deployment
         uses: actions/upload-pages-artifact@v3 # or specific "vX.X.X" version tag for this action
         with:
-          path: ~/site
+          path: /home/runner/work/mooreBrendan.github.io/mooreBrendan.github.io/site
   deploy:
     environment:
       name: github-pages
