@@ -1,4 +1,4 @@
-site_name: John Hammond
+site_name: Be Moore Homelab
 
 theme:
     name: 'material'
@@ -33,6 +33,12 @@ markdown_extensions:
   # - admonition
   - toc:
       permalink: true
+
+exclude_docs: |
+  .gitignore
+  mkdocks.yml
+
+docs_dir: '.'
 
 plugins:
   - search
