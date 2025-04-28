@@ -38,8 +38,6 @@ exclude_docs: |
   .gitignore
   mkdocks.yml
 
-docs_dir: '.'
-
 plugins:
   - search
   - roamlinks 
