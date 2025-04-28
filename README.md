@@ -18,6 +18,10 @@ Home Assistant is a home automation and management service.
 ==
 NTFY is a notification service that can be accessed through the command line.  This enables it to be called from automation scripts.
 
+[[NUT]]
+==
+NUT (Network UPS Tool) is a monitoring software that monitors a UPS to dectect power outages.  It is also able to start shutdown scripts on other servers if the battery in the UPS gets below a certain level in order to prevent data loss.
+
 [[PiHole]]
 ==
 PiHole is a DNS server that blackholes known ad domains so that they are unable to load on any device on the network without having to install another application on each device.  Additionally, you can add known malicious domains so that if a device on the network is compromised, it might not be able to find it's control server.
