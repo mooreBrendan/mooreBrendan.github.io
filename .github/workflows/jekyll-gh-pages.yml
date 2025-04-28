@@ -29,5 +29,6 @@ jobs:
           python-version: 3.x
       - run: pip install mkdocs-material
       - run: pip install mkdocs-roamlinks-plugin
-      - run: cp *.md docs/
+      - run: mkdir docs
+      - run: cp *.md ./docs/
       - run: mkdocs gh-deploy --force
