@@ -25,10 +25,10 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-python@v2
-      - name: Build static files
-        id: build
         with:
           python-version: 3.x
+      - name: Build static files
+        id: build
         run: |
           pip install mkdocs-material
           pip install mkdocs-roamlinks-plugin
