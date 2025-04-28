@@ -23,17 +23,18 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
       - name: Build static files
         id: build
-        uses: actions/checkout@v2
-        uses: actions/setup-python@v2
         with:
           python-version: 3.x
-        run: pip install mkdocs-material
-        run: pip install mkdocs-roamlinks-plugin
-        run: mkdir docs
-        run: cp *.md ./docs/
-        run: mkdocs gh-deploy --force
+        run: |
+          pip install mkdocs-material
+          pip install mkdocs-roamlinks-plugin
+          mkdir docs
+          cp *.md ./docs/
+          mkdocs gh-deploy --force
  
       - name: Upload static files as artifact
         id: deployment
