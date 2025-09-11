@@ -7,10 +7,6 @@ Dashy is a service that offers a homepage for your homelab.  It allows you to li
 ## [[Docker]]
 If you haven't already, click the link above to learn how to set up Docker.  Docker makes this service easier to setup and this guide will rely on it
 
-
-## Setup
-
-
 ## Installation
 The following is a sample docker compose file for running Dashy
 ```
