@@ -14,7 +14,7 @@ Home Assistant is a home automation and management service.
 ## [[NTFY]]
 NTFY is a notification service that can be accessed through the command line.  This enables it to be called from automation scripts.
 
-## [[NUT]]
+## [[PeaNUT]]
 NUT (Network UPS Tool) is a monitoring software that monitors a UPS to dectect power outages.  It is also able to start shutdown scripts on other servers if the battery in the UPS gets below a certain level in order to prevent data loss.
 
 ## [[PiHole]]

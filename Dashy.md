@@ -1,7 +1,7 @@
-## Dashy
+# Dashy
 
 ## Purpose
-
+Dashy is a service that offers a homepage for your homelab.  It allows you to link to the other various website that other homelab services use.  This enables you to not have to remember the various ip addresses or dns names.
 
 
 ## [[Docker]]
@@ -12,6 +12,7 @@ If you haven't already, click the link above to learn how to set up Docker.  Doc
 
 
 ## Installation
+The following is a sample docker compose file for running Dashy
 ```
 services:
   dashy:
@@ -37,4 +38,9 @@ services:
       #start_period: 40s
 ```
 
-## Verification
+## Initial Launch & testing
+To launch the application, simply navigate to the folder with the Docker compose file, and then run Docker compose up.
+
+*(note: Docker compose up can have an issue where you may be using the older "docker-compose" instead of the newer "docker compose".  The naming is similar, but are two different things.  You may have issues like I did where docker didn't have the correct repositories to install the newer Docker compose.  My [[Docker]] guide should have the correct info on how to fix this issue)*
+
+Once the Docker container is up and running, you should be able to navigate to the page by typing into the url of your web browser the ip address of the server running the Docker container followed by a semi-colon ':' and then the port. this should be in the form of 'http://192.168.1.1:8080'

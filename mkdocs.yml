@@ -36,18 +36,18 @@ markdown_extensions:
 
 nav:
   - Introduction: 'README.md'
+  - 'VMWare ESXi.md'
   - 'Docker.md'
   - 'Dashy.md'
   - 'Github_Pages.md'
   - 'HomeAssistant.md'
   - 'NGinx_Server.md'
   - 'NTFY.md'
-  - 'NUT.md'
+  - 'PeaNUT.md'
   - 'PiHole.md'
   - 'Portainer.md'
   - 'Traefik.md'
   - 'Uptime Kuma.md'
-  - 'VMWare ESXi.md'
   - 'Rick': 'https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ&start_radio=1'
 exclude_docs: |
   .gitignore

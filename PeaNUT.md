@@ -1,4 +1,4 @@
-# NUT
+# PeaNUT
 
 ## Purpose
 
