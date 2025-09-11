@@ -1,5 +1,6 @@
 name: mkdocs convert
 
+#detect when a commit is pushed and then run the action
 on:
   push:
     branches: ["main"]
@@ -20,6 +21,7 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  #the command to convert from markdown files to html files
   build:
     runs-on: ubuntu-latest
     steps:
@@ -27,6 +29,7 @@ jobs:
       - uses: actions/setup-python@v2
         with:
           python-version: 3.x
+      #install mkdocs into the action container a nd run it
       - name: Build static files
         id: build
         run: |
@@ -35,12 +38,14 @@ jobs:
           mkdir docs
           cp *.md ./docs/
           mkdocs gh-deploy --force
- 
+      #uploads the static html to the github actions so that other actions can use them
       - name: Upload static files as artifact
         id: deployment
         uses: actions/upload-pages-artifact@v3 # or specific "vX.X.X" version tag for this action
         with:
           path: /home/runner/work/mooreBrendan.github.io/mooreBrendan.github.io/site
+
+  #actually deploys the html files to the GitHub pages site
   deploy:
     environment:
       name: github-pages

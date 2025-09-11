@@ -1,7 +1,7 @@
 # Home Assistant
 
 ## Purpose
-
+Home Assistant is a network automation tool.  It allows you to detect various events and run scripts when those events trigger.
 
 
 ## [[Docker]]
