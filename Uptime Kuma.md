@@ -9,7 +9,18 @@ If you haven't already, click the link above to learn how to set up Docker.  Doc
 
 
 ## Setup
+```
+services:
+  uptime_kuma:
+    image: louislam/uptime-kuma:1
+    container_name: uptime-kuma
+    volumes:
+      - uptime-kuma:/app/data
+    restart: always
 
+volumes:
+  uptime-kuma:
+```
 
 ## Installation
 
