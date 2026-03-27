@@ -1,4 +1,4 @@
-# ~~WSUS~~
+# WSUS
 
 ## Purpose
 WSUS (Windows Server Update Service) is windows update service that allows you to control updates for your other windows servers.  This means you can download updates locally to one computer and then your other servers can just download updates off of that server, saving external bandwith and allowing faster downloads overall as intranet connections are typically faster than external connections.  You can also manage which updates to approve and when so that you can hold updates to see if others report issues with the update.
