@@ -32,7 +32,9 @@ You can add multiple servers by just copying and pasting the above section multi
 To tell the server to accept your key, you will need to authorize the key.  This can easily be done on Linux by signing on to the server and going to the user account's home folder and then the '.ssh' subfolder (if it's not there, just create it with `mkdir ~/.ssh`).  Either create or edit a file named 'authorized_keys' copy the contents of your PUBLIC key 
 
 !!! note "IMPORTANT"
-    THIS NEEDS TO BE YOUR PUBLIC KEY NOT YOUR PRIVATE KEY. DO NOT USE YOUR PRIVATE KEY. YOUR PRIVATE KEY NEEDS TO BE PRIVATE!!!).  If you ssh'ed into the server you may be able to simply copy paste the key into file.  If not, you may need to either input it manually or copy the public key file using a command like `scp -i ~/.ssh/filename.pub user@server:/<filepath on host> <path on client>`.
+    THIS NEEDS TO BE YOUR PUBLIC KEY NOT YOUR PRIVATE KEY. DO NOT USE YOUR PRIVATE KEY. YOUR PRIVATE KEY NEEDS TO BE PRIVATE!!!).
+
+If you ssh'ed into the server you may be able to simply copy paste the key into file.  If not, you may need to either input it manually or copy the public key file using a command like `scp -i ~/.ssh/filename.pub user@server:/<filepath on host> <path on client>`.
 
 Make sure the permissions are correct on the authorized_keys file.  If you enter the command 'ls -alh' inside the .ssh folder, you should see on the left side, a section with r's w's x's and -'s.  This specifies file premissions for Reads, Writes, and eXecutes for the file/folder.  The file should have only read and write privileges for the user (ie -rw-------).  If this isn't the case, you can change the file permissions by entering `chmod 600 authorized_keys` (this is binary where 6 is 110 for the first three --- and 0 for the other two sets of ---).
 
